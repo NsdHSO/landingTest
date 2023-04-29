@@ -4,6 +4,13 @@
   justify-content: space-between;
   flex-direction: row;
 }
+nav{
+  background-color: #212121 !important;
+  opacity: 0.7 !important;
+  color: #e5dfdb !important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 .column {
   width: 33.33%;
