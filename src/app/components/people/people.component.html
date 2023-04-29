@@ -16,14 +16,14 @@
     *ngFor="let data of peopleDada"
   >
     <th>{{data.firstName}}</th>
-    <th>{{data.lastName}}</th>
+    <th class="table-active__last-name">{{data.lastName}}</th>
     <th>{{data.age}}</th>
     <th>{{data.jobTitle}}</th>
   </tr>
   </tbody>
 </table>
 <ng-template #loading>
-  <div class="justify-content-center align-content-center d-flex display-1">
+  <div class="loading-state justify-content-center align-content-center d-flex display-1">
     loading
   </div>
 </ng-template>

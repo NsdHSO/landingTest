@@ -18,7 +18,6 @@ export class PeopleComponent implements OnInit {
 
   ngOnInit(){
     this.peoples = this.peopleService.getPeople();
-    console.log(this.peopleService.headerTable);
   }
 
 }
