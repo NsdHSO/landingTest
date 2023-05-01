@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-around;
     padding: 2rem 2rem 0 2rem;
+
     .ft-title {
       &-name {
         display: flex;
@@ -22,11 +23,11 @@
         line-height: 24px;
         margin-bottom: 8px;
         white-space: nowrap;
-        border-bottom: 1px solid #d8d9dc;
         color: #8f96a3;
         text-transform: uppercase;
       }
     }
+
     ul {
       margin-top: 1rem;
 
@@ -53,6 +54,12 @@
       width: 100%;
 
 
+      .ft-title {
+        &-name {
+          border-bottom: 1px solid #d8d9dc;
+
+        }
+      }
 
       display: block;
 
@@ -61,11 +68,7 @@
   }
 }
 
-@media only screen and (max-width: 48rem) {
-  .column {
-    width: 50%;
-  }
-}
+
 
 @media only screen and (min-width: 26.5rem) and (max-width: 26rem) {
   .footer-container {
@@ -102,4 +105,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-height: 425px)and (max-width: 48rem) {
+    height: 10rem;
+    footer{
+      margin: 0
+    }
+  }
 }
