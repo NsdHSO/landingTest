@@ -1,0 +1,23 @@
+<!-- TODO: make the footer a 3 column responsive layout -->
+<footer class="footer-container">
+
+  <div
+    *ngFor="let link of links"
+    class="footer-container__column"
+  >
+    <h2
+      class="ft-title"
+      data-test="entity-link"
+    >
+      <span class="ft-title-name">{{link.name}}</span>
+      <ul class="list-group">
+        <li
+          *ngFor="let lik of link.childrean"
+          class="h5  d-flex justify-content-between align-items-center"
+        >
+          <a [href]="lik.path">{{lik.label}}</a>
+        </li>
+      </ul>
+    </h2>
+  </div>
+</footer>

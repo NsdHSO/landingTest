@@ -1,0 +1,61 @@
+.footer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 8rem 8rem 0 8rem;
+  background-color: #212121;
+  opacity: .7;
+  color: #e5dfdb;
+  font-size: 0.875rem;
+
+  &__column {
+    width: 33.33%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+
+    &__column {
+      width: 100%;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+ul {
+  &::marker {
+    display: none;
+  }
+}
+
+:host {
+  @media only screen and (max-width: 30rem) {
+   width: inherit;
+  }
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: url(https://landgate.com/assets/images/footer-hills-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

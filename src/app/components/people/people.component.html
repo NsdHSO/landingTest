@@ -1,0 +1,29 @@
+<table
+  class="table table-hover"
+  *ngIf="(peoples | async) as peopleDada;else loading"
+>
+  <thead>
+  <tr>
+    <th scope="col">First Name</th>
+    <th scope="col">LastName</th>
+    <th scope="col">Age</th>
+    <th scope="col">Job Title</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr
+    class="table-active"
+    *ngFor="let data of peopleDada"
+  >
+    <th>{{data.firstName}}</th>
+    <th class="table-active__last-name">{{data.lastName}}</th>
+    <th>{{data.age}}</th>
+    <th>{{data.jobTitle}}</th>
+  </tr>
+  </tbody>
+</table>
+<ng-template #loading>
+  <div class="loading-state justify-content-center align-content-center d-flex display-1">
+    loading
+  </div>
+</ng-template>
