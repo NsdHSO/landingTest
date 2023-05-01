@@ -15,7 +15,7 @@
           *ngFor="let lik of link.childrean"
           class="h5  d-flex justify-content-between align-items-center"
         >
-          <a [href]="lik.path">{{lik.label}}</a>
+          <a [routerLink]="lik.path">{{lik.label}}</a>
         </li>
       </ul>
     </div>

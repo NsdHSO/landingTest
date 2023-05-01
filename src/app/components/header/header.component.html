@@ -26,7 +26,7 @@
             *ngFor="let path of links"
           ><a
             class="nav-link active"
-            [href]="path.path"
+            [routerLink]="path.path"
           >{{path.label}}</a></li>
         </ul>
       </div>
