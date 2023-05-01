@@ -5,7 +5,7 @@
     *ngFor="let link of links"
     class="footer-container__column"
   >
-    <h2
+    <div
       class="ft-title"
       data-test="entity-link"
     >
@@ -18,6 +18,6 @@
           <a [href]="lik.path">{{lik.label}}</a>
         </li>
       </ul>
-    </h2>
+    </div>
   </div>
 </footer>
